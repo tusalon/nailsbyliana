@@ -1,20 +1,20 @@
 {
-  "name": "Deilis Nail Art",
-  "short_name": "Deilis",
+  "name": "Nails by Lia",
+  "short_name": "Nails",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/deilis-nail-art/",
-  "scope": "/deilis-nail-art/",
+  "start_url": "/nails-by-lia/",
+  "scope": "/nails-by-lia/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/deilis-nail-art/icons/icon-192x192.png",
+      "src": "/nails-by-lia/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/deilis-nail-art/icons/icon-512x512.png",
+      "src": "/nails-by-lia/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

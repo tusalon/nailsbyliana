@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Deilis Nail Art
+// sw.js - Service Worker para Nails by Lia
 
-const CACHE_NAME = 'deilis-nail-art-v1';
+const CACHE_NAME = 'nails-by-lia-v1';
 const urlsToCache = [
-  '/deilis-nail-art/',
-  '/deilis-nail-art/index.html',
-  '/deilis-nail-art/admin.html',
-  '/deilis-nail-art/admin-login.html',
-  '/deilis-nail-art/setup-wizard.html',
-  '/deilis-nail-art/editar-negocio.html',
-  '/deilis-nail-art/manifest.json',
-  '/deilis-nail-art/icons/icon-72x72.png',
-  '/deilis-nail-art/icons/icon-96x96.png',
-  '/deilis-nail-art/icons/icon-128x128.png',
-  '/deilis-nail-art/icons/icon-144x144.png',
-  '/deilis-nail-art/icons/icon-152x152.png',
-  '/deilis-nail-art/icons/icon-192x192.png',
-  '/deilis-nail-art/icons/icon-384x384.png',
-  '/deilis-nail-art/icons/icon-512x512.png'
+  '/nails-by-lia/',
+  '/nails-by-lia/index.html',
+  '/nails-by-lia/admin.html',
+  '/nails-by-lia/admin-login.html',
+  '/nails-by-lia/setup-wizard.html',
+  '/nails-by-lia/editar-negocio.html',
+  '/nails-by-lia/manifest.json',
+  '/nails-by-lia/icons/icon-72x72.png',
+  '/nails-by-lia/icons/icon-96x96.png',
+  '/nails-by-lia/icons/icon-128x128.png',
+  '/nails-by-lia/icons/icon-144x144.png',
+  '/nails-by-lia/icons/icon-152x152.png',
+  '/nails-by-lia/icons/icon-192x192.png',
+  '/nails-by-lia/icons/icon-384x384.png',
+  '/nails-by-lia/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/deilis-nail-art/icons/icon-192x192.png');
+            return caches.match('/nails-by-lia/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Deilis Nail Art');
+console.log('✅ Service Worker configurado para Nails by Lia');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
